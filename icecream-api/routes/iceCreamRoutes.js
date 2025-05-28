@@ -1,7 +1,7 @@
 // icecream-api/routes/iceCreamRoutes.js
 const express = require('express');
 const {
-  getIceCreams,
+  
   getIceCream,
   createIceCream,
   updateIceCream,

@@ -1,7 +1,7 @@
 // icecream-api/routes/flavorRoutes.js
 const express = require('express');
 const {
-  getFlavors,
+
   getFlavor,
   createFlavor,
   updateFlavor,
@@ -12,7 +12,7 @@ const {
 const router = express.Router();
 
 router.route('/')
-  .get(getFlavors)
+  .get(getFlavor)
   .post(createFlavor);
 
   // --- ADD THESE COMMENTS ---
@@ -55,7 +55,7 @@ router.route('/')
    */
   router.route('/')
     .get(getFlavors)
-    .post(createFlavors);
+    .post(createFlavor);
   
   /**
    * @swagger

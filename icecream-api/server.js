@@ -27,7 +27,7 @@ app.use('/api/v1/flavors', flavorRoutes);
 // Swagger UI setup
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerFile));
 
-const PORT = process.env.PORT || 5000; // Default to 5000 if PORT is not set in .env
+const PORT = process.env.PORT || 5500; // Default to 5000 if PORT is not set in .env
 
 const server = app.listen(
   PORT,

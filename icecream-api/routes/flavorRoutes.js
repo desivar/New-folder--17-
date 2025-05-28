@@ -54,8 +54,8 @@ router.route('/')
    * description: Server error
    */
   router.route('/')
-    .get(getIceCreams)
-    .post(createIceCream);
+    .get(getFlavors)
+    .post(createFlavors);
   
   /**
    * @swagger
@@ -129,8 +129,8 @@ router.route('/')
    */
   router.route('/:id')
     .get(getFlavor)
-    .put(flavor)
-    .delete(flavor);
+    .put(updateFlavor)
+    .delete(deleteFlavor);
   
   module.exports = router;
 

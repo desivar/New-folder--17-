@@ -3,7 +3,7 @@ const IceCream = require('../models/IceCream');
 const Flavor = require('../models/Flavor'); // Needed for population
 
 // @desc    Get all ice creams
-// @route   GET /api/v1/icecreams
+// @route   GET /api/icecreams
 // @access  Public
 exports.getIceCreams = async (req, res) => {
   try {
@@ -15,7 +15,7 @@ exports.getIceCreams = async (req, res) => {
 };
 
 // @desc    Get single ice cream
-// @route   GET /api/v1/icecreams/:id
+// @route   GET /api/icecreams/:id
 // @access  Public
 exports.getIceCream = async (req, res) => {
   try {
@@ -30,7 +30,7 @@ exports.getIceCream = async (req, res) => {
 };
 
 // @desc    Create new ice cream
-// @route   POST /api/v1/icecreams
+// @route   POST /api/icecreams
 // @access  Public (for now)
 exports.createIceCream = async (req, res) => {
   try {
@@ -46,7 +46,7 @@ exports.createIceCream = async (req, res) => {
 };
 
 // @desc    Update ice cream
-// @route   PUT /api/v1/icecreams/:id
+// @route   PUT /api/icecreams/:id
 // @access  Public (for now)
 exports.updateIceCream = async (req, res) => {
   try {
@@ -69,7 +69,7 @@ exports.updateIceCream = async (req, res) => {
 };
 
 // @desc    Delete ice cream
-// @route   DELETE /api/v1/icecreams/:id
+// @route   DELETE /api/icecreams/:id
 // @access  Public (for now)
 exports.deleteIceCream = async (req, res) => {
   try {

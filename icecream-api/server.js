@@ -21,8 +21,8 @@ const iceCreamRoutes = require('./routes/iceCreamRoutes');
 const flavorRoutes = require('./routes/flavorRoutes');
 
 // Mount routers
-app.use('/api/v1/icecreams', iceCreamRoutes);
-app.use('/api/v1/flavors', flavorRoutes);
+app.use('/api/icecreams', iceCreamRoutes);
+app.use('/api/flavors', flavorRoutes);
 
 // Swagger UI setup
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerFile));

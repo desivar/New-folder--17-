@@ -2,7 +2,7 @@
 const Flavor = require('../models/Flavor');
 
 // @desc    Get all flavors
-// @route   GET /api/v1/flavors
+// @route   GET /api/flavors
 // @access  Public
 exports.getFlavors = async (req, res) => {
   try {
@@ -14,7 +14,7 @@ exports.getFlavors = async (req, res) => {
 };
 
 // @desc    Get single flavor
-// @route   GET /api/v1/flavors/:id
+// @route   GET /api/flavors/:id
 // @access  Public
 exports.getFlavor = async (req, res) => {
   try {
@@ -68,7 +68,7 @@ exports.updateFlavor = async (req, res) => {
 };
 
 // @desc    Delete flavor
-// @route   DELETE /api/v1/flavors/:id
+// @route   DELETE /api/flavors/:id
 // @access  Public (for now)
 exports.deleteFlavor = async (req, res) => {
   try {

@@ -11,6 +11,8 @@ const doc = {
   },
   host: 'localhost:5500', // Adjust this when deploying to Render
   schemes: ['http'], // Use 'https' when deploying to Render
+  // >>>>>>> ADD THIS LINE <<<<<<<
+  basePath: '/api', // This tells Swagger that all your API routes start with /api
   tags: [
     { name: 'IceCreams', description: 'Operations about ice creams' },
     { name: 'Flavors', description: 'Operations about flavors' }
